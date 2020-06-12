@@ -1,0 +1,41 @@
+body {
+    padding: 48px 0 0px 56px;
+    font-family: 'Roboto Mono', monospace;
+    background-color: #232323;
+    max-width: 500px;
+    color: #e6e1dc;
+}
+
+a {
+    text-decoration: none;
+    color: #c26230;
+}
+
+p {
+    line-height: 1.57em;
+}
+
+section {
+    margin: 48px 0;
+}
+
+h4 {
+    color: #6d9cbe;
+    margin-bottom: 0;
+}
+
+.name {
+    color: #bc9458;
+    font-weight: 600;
+    font-size: 1.17em;
+}
+
+ul {
+    padding: 0;
+}
+
+li, li a {
+    color: #a5c261;
+    list-style: none;
+    margin: 10px 0;
+}
