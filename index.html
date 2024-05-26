@@ -3,39 +3,474 @@
 <head>
   <title>alantmelo.me</title>
   <meta charset='UTF-8'>
-   <link rel="stylesheet" href="css/styles.css">
-   <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- <link rel="stylesheet" href="assets/styles/salesforce-lightning-design-system.min.css"> -->
+   <!-- <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet"> -->
+   <link rel="stylesheet" href="https://www.lightningdesignsystem.com/assets/styles/salesforce-lightning-design-system.min.css">
+
 </head>
 <body>
-  <header>
-    <p class="name"># Alan Tavares de Melo</p>
+  <header class="slds-global-header_container">
+    <a href="javascript:void(0);" class="slds-assistive-text slds-assistive-text--focus">Skip to Navigation</a>
+    <a href="javascript:void(0);" class="slds-assistive-text slds-assistive-text--focus">Skip to Main Content</a>
+    <div class="slds-global-header slds-grid slds-grid_align-spread">
+      <div class="slds-global-header__item">
+        <div class="slds-global-header__logo">
+          <!-- <img src="https://www.salesforce.com/content/dam/web/en_us/www/images/home/salesforce-logo.png" alt="Salesforce"> -->
+        </div>
+      </div>
+      <div class="slds-global-header__item">
+        <ul class="slds-global-actions">
+          <li>
+            <div class="slds-dropdown-trigger slds-dropdown-trigger_click">
+              <button class="slds-button" title="User">
+                <span class="slds-avatar slds-avatar_circle slds-avatar_medium">
+                  <img alt="User" src="assets/icons/utility/user_60.png">
+                </span>
+              </button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
   </header>
-  <section id='content'>
-    <p>I'm Salesforce in <a href="https://ilia.digital/en/" target="_blank">Ília</a>. Living in Maceió, Brazil.</p>
-    <p>I love  programming, music, movies and beach.</p>
-  </section>
-  <section class='projects'>
-    <h4>Technologies:</h4>
-    <ul>
-      <li>- Salesforce</li>
-      <li>- Laravel/PHP</li>
-      <li>- Yii2/PHP</li>
-      <li>- Ionic 2+</li>
-      <li>- Angular</li>
-      <li>- NodeJs</li>
-      <li>- Git</li>
-    </ul>
-  </section>
-  <section class='links'>
-    <h4>Contacts:</h4>
-    <ul>
-      <li>- alantmelo[at]gmail.com</li>
-      <li>- <a href="https://github.com/alantmelo" target="_blank">github:alantmelo</a></li>
-      <li>- <a href="https://www.instagram.com/alan.t.melo/" target="_blank">instagram:alantmelo</a></li>
-      <li>- <a href="https://www.linkedin.com/in/alan-tavares-de-melo-20033644/" target="_blank">linkedin:alan-tavares-de-melo-20033644</a></li>
-      <li>- <a href="https://trailblazer.me/id/alanmelo" target="_blank">trailblazer:alantmelo</a></li>
-    </ul>
-  </section>
+  <br>
+  <!-- Main Content Layout -->
+  <div class="slds-p-around_medium"> <!-- Adding padding around the main content -->
+    <br>
+    <div class="slds-page-header">
+      <div class="slds-page-header__row">
+      <div class="slds-page-header__col-title">
+      <div class="slds-media">
+      <div class="slds-media__figure">
+      <span class="slds-icon_container slds-icon-standard-account" title="opportunity">
+      <svg class="slds-icon slds-page-header__icon" aria-hidden="true">
+      <use xlink:href="/assets/icons/standard-sprite/svg/symbols.svg#opportunity"></use>
+      </svg>
+      <span class="slds-assistive-text">opportunity</span>
+      </span>
+      </div>
+      <div class="slds-media__body">
+      <div class="slds-page-header__name">
+      <div class="slds-page-header__name-title">
+      <h1>
+      <span class="slds-page-header__title slds-truncate" title="Alan Tavares de Melo">Alan Tavares de Melo</span>
+      </h1>
+      </div>
+      </div>
+      <p class="slds-page-header__name-meta">Software Developer Analyst Salesforce - <a href="https://www.linkedin.com/in/alan-tavares-de-melo-20033644/">Linkedin</a> - <a href="https://github.com/alantmelo">Github</a></p> 
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+    <div class="slds-grid slds-wrap">
+      <!-- Left Column -->
+      <div class="slds-col slds-size_2-of-4 slds-p-around_medium">
+        <article class="slds-card">
+          <div class="slds-card__header slds-grid">
+          <header class="slds-media slds-media_center slds-has-flexi-truncate">
+          <div class="slds-media__figure">
+          <span class="slds-icon_container slds-icon-standard-account" title="account">
+          <svg class="slds-icon slds-icon_small" aria-hidden="true">
+          <use xlink:href="/assets/icons/standard-sprite/svg/symbols.svg#account"></use>
+          </svg>
+          <span class="slds-assistive-text">account</span>
+          </span>
+          </div>
+          <div class="slds-media__body">
+          <h2 class="slds-card__header-title">
+          <a href="#" class="slds-card__header-link slds-truncate" title="About me">
+          <span>About me</span>
+          </a>
+          </h2>
+          </div>
+          <!-- <div class="slds-no-flex">
+          <button class="slds-button slds-button_neutral">New</button>
+          </div> -->
+          </header>
+          </div>
+          <div class="slds-card__body slds-card__body_inner"> <p>Bachelor's degree in Systems Analysis with experience in several programming languages and technologies, including: <br><br>
+
+            CRM Administration/Development: Salesforce
+            Web Development: HTML5, CSS3, PHP, JavaScript, Angular
+            Database: MySQL, Relational Model
+            Mobile Development: Ionic/Angular, REST
+            </p> </div>
+          <footer class="slds-card__footer">
+          <a class="slds-card__footer-action" href="#">View All
+          <span class="slds-assistive-text">Accounts</span>
+          </a>
+          </footer>
+          </article>
+      </div>
+
+      <!-- Right Column -->
+      <div class="slds-col slds-size_2-of-4 slds-p-around_medium">
+        <article class="slds-card">
+          <div class="slds-card__header slds-grid">
+          <header class="slds-media slds-media_center slds-has-flexi-truncate">
+          <div class="slds-media__figure">
+          <span class="slds-icon_container slds-icon-standard-account" title="account">
+          <svg class="slds-icon slds-icon_small" aria-hidden="true">
+          <use xlink:href="/assets/icons/standard-sprite/svg/symbols.svg#account"></use>
+          </svg>
+          <span class="slds-assistive-text">account</span>
+          </span>
+          </div>
+          <div class="slds-media__body">
+          <h2 class="slds-card__header-title">
+          <a href="#" class="slds-card__header-link slds-truncate" title="Software Development Skills">
+          <span>Software Development Skills</span>
+          </a>
+          </h2>
+          </div>
+          <!-- <div class="slds-no-flex">
+          <button class="slds-button slds-button_neutral">New</button>
+          </div> -->
+          </header>
+          </div>
+          <div class="slds-card__body slds-card__body_inner">
+            <h3 id="other-element-with-table-label" class="slds-text-title slds-m-bottom_small">
+            
+            <table class="slds-table slds-table_cell-buffer slds-table_bordered" aria-labelledby="element-with-table-label other-element-with-table-label">
+            <thead>
+            <tr class="slds-line-height_reset">
+            <th class="" scope="col">
+            <div class="slds-truncate" title="Name">Name</div>
+            </th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="slds-hint-parent">
+            <th data-label="Name" scope="row">
+            <div class="slds-truncate" title="Apex">
+            <a href="#" tabindex="-1">APEX</a>
+            </div>
+            <tr class="slds-hint-parent">
+              <th data-label="Name" scope="row">
+              <div class="slds-truncate" title="APEX TESTS">
+              <a href="#" tabindex="-1">APEX TESTS</a>
+              </div>
+              
+              </tr>
+            </tr>
+
+            <tr class="slds-hint-parent">
+            <th data-label="Name" scope="row">
+            <div class="slds-truncate" title="LWC">
+            <a href="#" tabindex="-1">LWC</a>
+            </div>
+            
+            </tr>
+            <tr class="slds-hint-parent">
+            <th data-label="Name" scope="row">
+            <div class="slds-truncate" title="OBJECT ORIENTED PROGRAMMING">
+            <a href="#" tabindex="-1">OBJECT ORIENTED PROGRAMMING</a>
+            </div>
+            
+            </tr>
+            
+            <tr class="slds-hint-parent">
+            <th data-label="Name" scope="row">
+            <div class="slds-truncate" title="SOQL">
+            <a href="#" tabindex="-1">SOQL</a>
+            </div>
+            
+            </tr>
+            <tr class="slds-hint-parent">
+            <th data-label="Name" scope="row">
+            <div class="slds-truncate" title="REST API (APEX CLASS/BULK/COMPOSITE)">
+            <a href="#" tabindex="-1">REST API (APEX CLASS/BULK/COMPOSITE)</a>
+            </div>
+            
+            </tr>
+            <tr class="slds-hint-parent">
+            <th data-label="Name" scope="row">
+            <div class="slds-truncate" title="JAVASCRIPT">
+            <a href="#" tabindex="-1">JAVASCRIPT</a>
+            </div>
+            
+            </tr>
+            <tr class="slds-hint-parent">
+            <th data-label="Name" scope="row">
+            <div class="slds-truncate" title="HTML">
+            <a href="#" tabindex="-1">HTML</a>
+            </div>
+            
+            </tr>
+            <tr class="slds-hint-parent">
+            <th data-label="Name" scope="row">
+            <div class="slds-truncate" title="FLOW">
+            <a href="#" tabindex="-1">FLOW</a>
+            </div>
+            
+            </tr>
+            <tr class="slds-hint-parent">
+            <th data-label="Name" scope="row">
+            <div class="slds-truncate" title="JENKINS">
+            <a href="#" tabindex="-1">JENKINS</a>
+            </div>
+            
+            </tr>
+            <tr class="slds-hint-parent">
+            <th data-label="Name" scope="row">
+            <div class="slds-truncate" title="JIRA">
+            <a href="#" tabindex="-1">JIRA</a>
+            </div>
+            
+            </tr>
+            <tr class="slds-hint-parent">
+            <th data-label="Name" scope="row">
+            <div class="slds-truncate" title="PHP/LARAVEL/YII2">
+            <a href="#" tabindex="-1">PHP/LARAVEL/YII2</a>
+            </div>
+            
+            </tr>
+            <tr class="slds-hint-parent">
+            <th data-label="Name" scope="row">
+            <div class="slds-truncate" title="MYSQL">
+            <a href="#" tabindex="-1">MYSQL</a>
+            </div>
+            
+            </tr>
+            <tr class="slds-hint-parent">
+            <th data-label="Name" scope="row">
+            <div class="slds-truncate" title="POSTGRESQL">
+            <a href="#" tabindex="-1">POSTGRESQL</a>
+            </div>
+            </tr>
+            <tr class="slds-hint-parent">
+            <th data-label="Name" scope="row">
+            <div class="slds-truncate" title="NESTJS">
+            <a href="#" tabindex="-1">NESTJS</a>
+            </div>
+            
+            </tr>
+            </tr>
+            <tr class="slds-hint-parent">
+            <th data-label="Name" scope="row">
+            <div class="slds-truncate" title="IONIC/ANGULAR">
+            <a href="#" tabindex="-1">IONIC/ANGULAR</a>
+            </div>
+            
+            </tr>
+            <tr class="slds-hint-parent">
+            <th data-label="Name" scope="row">
+            <div class="slds-truncate" title="LINUX">
+            <a href="#" tabindex="-1">LINUX</a>
+            </div>
+            
+          
+            </tbody>
+            </table></div>
+          <footer class="slds-card__footer">
+          <a class="slds-card__footer-action" href="#">View All
+          <span class="slds-assistive-text">Accounts</span>
+          </a>
+          </footer>
+          </article>
+        <!-- <div class="slds-card">
+          <div class="slds-card__header slds-grid">
+            <header class="slds-media slds-media_center slds-has-flexi-truncate">
+              <div class="slds-media__figure">
+                <svg class="slds-icon slds-icon_small" aria-hidden="true">
+                  <use xlink:href="/assets/icons/standard-sprite/svg/symbols.svg#opportunity"></use>
+                </svg>
+              </div>
+              <div class="slds-media__body">
+                <h2 class="slds-card__header-title">
+                  <a href="javascript:void(0);" class="slds-card__header-link slds-truncate" title="Opportunities">
+                    <span>Opportunities</span>
+                  </a>
+                </h2>
+              </div>
+            </header>
+          </div>
+          <div class="slds-card__body slds-card__body_inner">
+            <p>This is the right column content.</p>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </div>
+  <!-- <header> -->
+    <!-- <section role="dialog" tabindex="-1" aria-modal="true" aria-labelledby="welcome-mat-13-label" class="slds-modal slds-fade-in-open slds-modal_small">
+      <div class="slds-modal__container">
+      <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse">
+      <svg class="slds-button__icon slds-button__icon_large" aria-hidden="true">
+      <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#close"></use>
+      </svg>
+      <span class="slds-assistive-text">Cancel and close</span>
+      </button>
+      <div class="slds-modal__header slds-modal__header_empty"></div>
+      <div class="slds-modal__content" id="welcome-mat-13-content">
+      <div class="slds-welcome-mat">
+      <div class="slds-welcome-mat__content slds-grid">
+      <div class="slds-welcome-mat__info slds-size_1-of-2" tabindex="0" role="region">
+      <div class="slds-welcome-mat__info-content">
+      <h2 class="slds-welcome-mat__info-title" id="welcome-mat-13-label">The Lightning Experience is here!</h2>
+      <div class="slds-welcome-mat__info-description slds-text-longform">
+      <p>Welcome to Lightning Experience, the modern, beautiful user experience from Salesforce. With a sales-and service-centric mindset, we focused on reinventing the desktop environment to better support your business processes.</p>
+      </div>
+      <div class="slds-welcome-mat__info-progress">
+      <p>
+      <strong>0/5 units completed</strong>
+      </p>
+      </div>
+      <div class="slds-progress-bar slds-progress-bar_circular" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="{{Placeholder for description of progress bar}}" role="progressbar">
+      <span class="slds-progress-bar__value" style="width:0%">
+      <span class="slds-assistive-text">Progress: 0%</span>
+      </span>
+      </div>
+      </div>
+      </div>
+      <ul class="slds-welcome-mat__tiles slds-size_1-of-2">
+      <li class="slds-welcome-mat__tile">
+      <a href="#" class="slds-box slds-box_link slds-media">
+      <div class="slds-media__figure slds-media__figure_fixed-width slds-align_absolute-center">
+      <div class="slds-welcome-mat__tile-figure">
+      <div class="slds-welcome-mat__tile-icon-container">
+      <span class="slds-icon_container slds-icon-utility-animal_and_nature">
+      <svg class="slds-icon slds-icon-text-default" aria-hidden="true">
+      <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#animal_and_nature"></use>
+      </svg>
+      </span>
+      <span class="slds-icon_container slds-icon_container_circle slds-icon-action-check" title="Completed">
+      <svg class="slds-icon slds-welcome-mat__icon-check" aria-hidden="true">
+      <use xlink:href="/assets/icons/action-sprite/svg/symbols.svg#check"></use>
+      </svg>
+      <span class="slds-assistive-text">Completed</span>
+      </span>
+      </div>
+      </div>
+      </div>
+      <div class="slds-media__body">
+      <div class="slds-welcome-mat__tile-body">
+      <h3 class="slds-welcome-mat__tile-title">Welcome to Salesforce!</h3>
+      <p class="slds-welcome-mat__tile-description">Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet.</p>
+      </div>
+      </div>
+      </a>
+      </li>
+      <li class="slds-welcome-mat__tile">
+      <a href="#" class="slds-box slds-box_link slds-media">
+      <div class="slds-media__figure slds-media__figure_fixed-width slds-align_absolute-center">
+      <div class="slds-welcome-mat__tile-figure">
+      <div class="slds-welcome-mat__tile-icon-container">
+      <span class="slds-icon_container slds-icon-utility-call">
+      <svg class="slds-icon slds-icon-text-default" aria-hidden="true">
+      <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#call"></use>
+      </svg>
+      </span>
+      <span class="slds-icon_container slds-icon_container_circle slds-icon-action-check" title="Completed">
+      <svg class="slds-icon slds-welcome-mat__icon-check" aria-hidden="true">
+      <use xlink:href="/assets/icons/action-sprite/svg/symbols.svg#check"></use>
+      </svg>
+      <span class="slds-assistive-text">Completed</span>
+      </span>
+      </div>
+      </div>
+      </div>
+      <div class="slds-media__body">
+      <div class="slds-welcome-mat__tile-body">
+      <h3 class="slds-welcome-mat__tile-title">Learn About OpenCTI</h3>
+      <p class="slds-welcome-mat__tile-description">Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet.</p>
+      </div>
+      </div>
+      </a>
+      </li>
+      <li class="slds-welcome-mat__tile">
+      <a href="#" class="slds-box slds-box_link slds-media">
+      <div class="slds-media__figure slds-media__figure_fixed-width slds-align_absolute-center">
+      <div class="slds-welcome-mat__tile-figure">
+      <div class="slds-welcome-mat__tile-icon-container">
+      <span class="slds-icon_container slds-icon-utility-upload">
+      <svg class="slds-icon slds-icon-text-default" aria-hidden="true">
+      <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#upload"></use>
+      </svg>
+      </span>
+      <span class="slds-icon_container slds-icon_container_circle slds-icon-action-check" title="Completed">
+      <svg class="slds-icon slds-welcome-mat__icon-check" aria-hidden="true">
+      <use xlink:href="/assets/icons/action-sprite/svg/symbols.svg#check"></use>
+      </svg>
+      <span class="slds-assistive-text">Completed</span>
+      </span>
+      </div>
+      </div>
+      </div>
+      <div class="slds-media__body">
+      <div class="slds-welcome-mat__tile-body">
+      <h3 class="slds-welcome-mat__tile-title">Power Up the Utility Bar</h3>
+      <p class="slds-welcome-mat__tile-description">Tap into case history or share notes with fellow agents—it all happens on the utility bar.</p>
+      </div>
+      </div>
+      </a>
+      </li>
+      <li class="slds-welcome-mat__tile">
+      <a href="#" class="slds-box slds-box_link slds-media">
+      <div class="slds-media__figure slds-media__figure_fixed-width slds-align_absolute-center">
+      <div class="slds-welcome-mat__tile-figure">
+      <div class="slds-welcome-mat__tile-icon-container">
+      <span class="slds-icon_container slds-icon-utility-magicwand">
+      <svg class="slds-icon slds-icon-text-default" aria-hidden="true">
+      <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#magicwand"></use>
+      </svg>
+      </span>
+      <span class="slds-icon_container slds-icon_container_circle slds-icon-action-check" title="Completed">
+      <svg class="slds-icon slds-welcome-mat__icon-check" aria-hidden="true">
+      <use xlink:href="/assets/icons/action-sprite/svg/symbols.svg#check"></use>
+      </svg>
+      <span class="slds-assistive-text">Completed</span>
+      </span>
+      </div>
+      </div>
+      </div>
+      <div class="slds-media__body">
+      <div class="slds-welcome-mat__tile-body">
+      <h3 class="slds-welcome-mat__tile-title">Customize your view</h3>
+      <p class="slds-welcome-mat__tile-description">Tailor your cases to your team&#x27;s workflow with custom list views.</p>
+      </div>
+      </div>
+      </a>
+      </li>
+      <li class="slds-welcome-mat__tile">
+      <a href="#" class="slds-box slds-box_link slds-media">
+      <div class="slds-media__figure slds-media__figure_fixed-width slds-align_absolute-center">
+      <div class="slds-welcome-mat__tile-figure">
+      <div class="slds-welcome-mat__tile-icon-container">
+      <span class="slds-icon_container slds-icon-utility-knowledge_base">
+      <svg class="slds-icon slds-icon-text-default" aria-hidden="true">
+      <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#knowledge_base"></use>
+      </svg>
+      </span>
+      <span class="slds-icon_container slds-icon_container_circle slds-icon-action-check" title="Completed">
+      <svg class="slds-icon slds-welcome-mat__icon-check" aria-hidden="true">
+      <use xlink:href="/assets/icons/action-sprite/svg/symbols.svg#check"></use>
+      </svg>
+      <span class="slds-assistive-text">Completed</span>
+      </span>
+      </div>
+      </div>
+      </div>
+      <div class="slds-media__body">
+      <div class="slds-welcome-mat__tile-body">
+      <h3 class="slds-welcome-mat__tile-title">Share the Knowledge</h3>
+      <p class="slds-welcome-mat__tile-description">Harness your team&#x27;s collective know-how with our powerful knowledge base.</p>
+      </div>
+      </div>
+      </a>
+      </li>
+      </ul>
+      </div>
+      </div>
+      </div>
+      </div>
+      </section>
+      <div class="slds-backdrop slds-backdrop_open" role="presentation"></div> -->
+  <!-- </header> -->
+  
 </body>
 
 </html>
